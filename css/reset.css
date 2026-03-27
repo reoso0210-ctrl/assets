@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: var(--s-color-2E3D52);
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --s-color-2E3D52: #2E3D52;
+}
+
+.wapper{
+    max-width: 768px;
+    margin: 0px auto 70px auto;
+    padding: 0 30px;
+    height: auto;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: solid 3px #2E3D52;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+    /* line-height: 1.5; */
+    font-weight: normal;
+}
+
+.orenge {
+    color: #FBAB32;
+}
+
+.red {
+    color: #E8412E;
+}
