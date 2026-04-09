@@ -30,10 +30,15 @@ li{
 }
 
 .wapper{
-    max-width: 768px;
-    margin: 0px auto 70px auto;
-    padding: 0 30px;
+    margin: 0px auto;
+    padding: 70px 30px;
     height: auto;
+}
+
+@media(max-width:429px){
+    .wapper{
+        padding: 30px 10px;
+    }
 }
 
 h1{
@@ -46,6 +51,7 @@ h2{
     font-size: 28px;
     font-weight: bold;
     border-bottom: solid 3px #2E3D52;
+    margin-bottom: 50px;
 }
 
 h3{
