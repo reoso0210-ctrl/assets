@@ -6,10 +6,17 @@
     box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
     background-color: white;
+    overflow-x: hidden;
 }
 
 a{
@@ -23,6 +30,15 @@ a:hover{
 
 li{
     list-style: none;
+    display: block;
+}
+
+ol{
+    display: block;
+}
+button{
+    border: none;
+    background: none;
 }
 
 :root{
@@ -38,6 +54,12 @@ li{
 @media(max-width:429px){
     .wapper{
         padding: 30px 10px;
+    }
+}
+
+@media(min-width:768px){
+    .wapper{
+        padding: 60px 30px;
     }
 }
 
@@ -86,4 +108,8 @@ p{
 
 .red {
     color: #E8412E;
+}
+
+.pc{
+    display: none ;
 }

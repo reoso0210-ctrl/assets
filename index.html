@@ -37,9 +37,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Js読み込み -->
-  <!-- <script src="js/main.js" defer></script> -->
+  <script src="js/main.js" defer></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,18 +55,30 @@
     <div class="header-top wapper">
       <img class="logo" src="img/header-logo.svg" alt="ロゴ">
       <ul class="buttons">
-        <a href="#">
-          <li class="form-button">
+        <li class="form-button cs">
+          <a href="#">
             <img src="img/form-letter.webp" alt="フォームのイラスト">
             <span>無料見積もり</span>
-          </li>
-        </a>
-        <a href="">
-          <li class="line-button">
+          </a>
+        </li>
+        <li class="pc-form-button pc">
+          <a href="#">
+            <h5>無料見積もりはこちら</h5>
+            <img src="img/arrow-right.webp" alt="右矢印の画像">
+          </a>
+        </li>
+        <li class="line-button cs">
+          <a href="#">
             <img src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEはこちら</span>
-          </li>
-        </a>
+          </a>
+        </li>
+        <li class="pc-line-button pc">
+          <a href="#">
+            <h5>LINEで今すぐ相談</h5>
+            <img src="img/arrow-right.webp" alt="右矢印の画像">
+          </a>
+        </li>
       </ul>
     </div>
     <div>
@@ -98,35 +110,38 @@
   </header>
 
   <section class="firstview">
-    <h5>住まいを整え、心を軽く</h5>
-    <h1>全国対応の<br>
-      <span class="orenge">ゴミ屋敷</span>清掃
-    </h1>
-    <div class="first-content">
-      <div class="first-badge"><span>専門の<br>
-          スタッフ</span><br>
-        が対応</div>
+    <div class="first-inner">
+      <h5>住まいを整え、心を軽く</h5>
+      <h1>全国対応の<br>
+        <span class="orenge">ゴミ屋敷</span>清掃
+      </h1>
+      <div class="first-content">
+        <div class="first-badge"><span>専門の<br>
+            スタッフ</span><br>
+          が対応</div>
         <div class="min-first">
-      <div class="first-leaf">最短<br>
-        即日</div>
-      <div class="first-leaf">明朗<br>
-        会計</div></div>
-    </div>
-    <div class="first-img">
-      <img src="img/firstview-before.webp" alt="清掃前の画像">
-      <img src="img/firstview-after.webp" alt="清掃後の画像">
-    </div>
-    <div class="first-p">
-      <span class="first-marker">ゴミ撤去</span>・<span class="first-marker">脱臭処理</span>・<span
-        class="first-marker">害虫対策</span>・<span class="first-marker">原状回復</span>まで<br>
-      丁寧に対応いたします。
+          <div class="first-leaf">最短<br>
+            即日</div>
+          <div class="first-leaf">明朗<br>
+            会計</div>
+        </div>
+      </div>
+      <div class="first-img cs">
+        <img src="img/firstview-before.webp" alt="清掃前の画像">
+        <img src="img/firstview-after.webp" alt="清掃後の画像">
+      </div>
+      <div class="first-p">
+        <span class="first-marker">ゴミ撤去</span>・<span class="first-marker">脱臭処理</span>・<span
+          class="first-marker">害虫対策</span>・<span class="first-marker">原状回復</span>まで<br>
+        丁寧に対応いたします。
+      </div>
     </div>
   </section>
 
 
   <section class="first-cta">
     <div class="cta">
-      <div class="cta-tel">
+      <div class="cta-tel cs">
         <img src="img/黒電話1.webp" alt="電話の画像">
         <div class="cta-tel-text">
           <h3>06-6422-5526</h3>
@@ -134,21 +149,31 @@
         </div>
       </div>
       <div class="cta-under">
-        <h5><span class="red">24時間</span>受付中</h5>
-        <h6>通常1時間以内にご返信いたします</h6>
+        <div class="pc-cta">
+          <h5><span class="red">24時間</span>受付中</h5>
+          <h6>通常1時間以内にご返信いたします</h6>
+          <div class="cta-caution pc">
+            <small>※相談・見積もりは完全無料</small>
+            <small>※しつこい営業は一切ありません</small>
+            <small>※秘密厳守で対応します</small>
+          </div>
+        </div>
         <div class="cta-button">
           <a href="" class="cta-line">
-            <img src="img/LINE-button.webp" alt="LINEのボタン">
+            <img class="line-img" src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEで<br>
               今すぐ相談</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
-          <a href="" class="cta-form">
-            <img src="img/form-letter.webp" alt="フォームのイラスト">
+          <a href="#" class="cta-form">
+            <img class="cs" src="img/form-letter.webp" alt="フォームのイラスト">
+            <img class="pc computer" src="img/Vector.png" alt="">
             <span>無料見積り<br>
               はこちら</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
         </div>
-        <div class="cta-caution">
+        <div class="cta-caution cs">
           <small>※相談・見積もりは完全無料</small>
           <small>※しつこい営業は一切ありません</small>
           <small>※秘密厳守で対応します</small>
@@ -160,12 +185,12 @@
 
   <section class="trouble wapper">
     <div class="credit">
-      <h5>各種クレジットカード<br>
+      <h5>各種クレジットカード<br class="cs">
         ご利用いただけます。
       </h5>
       <div class="credit-under">
         <ul class="credit-point">
-          <li>追加料金<span class="orenge">一切ナシ</span></li>
+          <li>追加料金<br class="pc"><span class="orenge">一切ナシ</span></li>
           <li><span class="orenge">現金/銀行振込</span>にも対応</li>
           <li><span class="orenge">最短即日対応</span>いたします</li>
         </ul>
@@ -176,7 +201,7 @@
           <li><img src="img/amex.webp" alt="American Expressのロゴ"></li>
       </div>
     </div>
-    <div class="troubles wapper">
+    <div class="troubles">
       <h3>こんな<span class="red">お悩み</span>ありませんか？</h3>
       <p>急な来客や退去でもう<span class="orenge">時間がない</span></p>
       <p>近所や家族に<span class="orenge">知られずに</span>片付けたい</p>
@@ -185,9 +210,9 @@
     </div>
   </section>
   <div class="solution">
-    <h5><span class="orenge">ご安心ください！<br>
-      </span>どんな状況でも私たちが<br>
-      最後まで責任をもって<br>
+    <h5><span class="orenge">ご安心ください！<br class="cs">
+      </span>どんな状況でも私たちが<br class="cs">
+      最後まで責任をもって<br class="cs">
       解決いたします。</h5>
   </div>
 
@@ -197,17 +222,22 @@
       <img src="img/text-5.webp" alt="数字の5の画像">
       <div class="remain-text">
         <h5>お掃除兄弟が選ばれる</h5>
-        <span class="large">つの<br>
+        <span class="large">つの<br class="cs">
           理由</span>
       </div>
     </div>
     <div class="reason-cards">
-      <div class="reason-title">
+      <div class="reason-img pc">
+        <img src="img/reason01.webp" alt="理由1のテキストの画像">
+        <img class="reason-num" src="img/01.webp" alt="">
+      </div>
+      <div class="reason-title cs">
         <img src="img/01.webp" alt="理由1のテキストの画像">
         <h3 class="orenge">最短即日対応</h3>
       </div>
       <div class="reason-content">
-        <img src="img/reason01.webp" alt="理由1の画像">
+        <img class="cs" src="img/reason01.webp" alt="理由1の画像">
+        <h3 class="orenge pc">最短即日対応</h3>
         <h4>お急ぎの状況にも<br>
           できる限りすぐに駆け付けます。</h4>
         <p>突然の退去や来客など、<span class="red">焦ってしまう場面</span><br>
@@ -217,12 +247,17 @@
       </div>
     </div>
     <div class="reason-cards">
-      <div class="reason-title">
+      <div class="reason-img pc">
+        <img src="img/reason02.webp" alt="理由2のテキストの画像">
+        <img class="reason-num" src="img/02.webp" alt="">
+      </div>
+      <div class="reason-title cs">
         <img src="img/02.webp" alt="理由2のテキストの画像">
         <h3 class="orenge">追加料金なしの明朗会計</h3>
       </div>
       <div class="reason-content">
-        <img src="img/reason02.webp" alt="理由3の画像">
+        <img class="cs" src="img/reason02.webp" alt="理由2の画像">
+        <h3 class="orenge pc">追加料金なしの明朗会計</h3>
         <h4>不安を残さない、<br>
           わかりやすい料金説明を<br>
           お約束します。</h4>
@@ -234,13 +269,19 @@
       </div>
     </div>
     <div class="reason-cards">
-      <div class="reason-title">
-        <img src="img/03.webp" alt="理由3のテキストの画像">
+      <div class="reason-img pc">
+        <img src="img/reason03.webp" alt="理由3のテキストの画像">
+        <img class="reason-num" src="img/03.webp" alt="">
+      </div>
+      <div class="reason-title cs">
+        <img src="img/03.webp" alt="理由2のテキストの画像">
         <h3 class="orenge">経験豊富なスタッフが<br>
           丁寧に対応</h3>
       </div>
       <div class="reason-content">
-        <img src="img/reason03.webp" alt="理由3の画像">
+        <img class="cs" src="img/reason03.webp" alt="理由3の画像">
+        <h3 class="orenge pc">経験豊富なスタッフが<br>
+          丁寧に対応</h3>
         <h4>経験豊富なスタッフが、<br>
           状況に合わせて丁寧に対応します</h4>
         <p>ゴミ屋敷清掃の経験を積んだ<br>
@@ -251,13 +292,19 @@
       </div>
     </div>
     <div class="reason-cards">
-      <div class="reason-title">
+      <div class="reason-img pc">
+        <img src="img/reason04.webp" alt="理由4のテキストの画像">
+        <img class="reason-num" src="img/04.webp" alt="">
+      </div>
+      <div class="reason-title cs">
         <img src="img/04.webp" alt="理由4のテキストの画像">
         <h3 class="orenge">無料見積もり<br>
           LINE見積もり対応</h3>
       </div>
       <div class="reason-content">
-        <img src="img/reason04.webp" alt="理由4の画像">
+        <img class="cs" src="img/reason04.webp" alt="理由4の画像">
+        <h3 class="orenge pc">無料見積もり<br>
+          LINE見積もり対応</h3>
         <h4>ご相談・お見積もりは無料です。</h4>
         <p>「まずは聞いてみたい」だけでも<br>
           構いません。お部屋の写真を<br>
@@ -267,14 +314,19 @@
       </div>
     </div>
     <div class="reason-cards">
-      <div class="reason-title">
+      <div class="reason-img pc">
+        <img src="img/reason05.webp" alt="理由5のテキストの画像">
+        <img class="reason-num" src="img/05.webp" alt="">
+      </div>
+      <div class="reason-title cs">
         <img src="img/05.webp" alt="理由5のテキストの画像">
         <h3 class="orenge">分別から清掃まで<br>
-          一括対応
-        </h3>
+          一括対応</h3>
       </div>
       <div class="reason-content">
-        <img src="img/reason05.webp" alt="理由5の画像">
+        <img class="cs" src="img/reason05.webp" alt="理由5の画像">
+        <h3 class="orenge pc">分別から清掃まで<br>
+          一括対応</h3>
         <h4>仕分けから清掃まで、<br>
           すべて私たちにお任せください。</h4>
         <p>何を残すか迷っている場合も、<br>
@@ -287,29 +339,39 @@
 
   <section>
     <div class="cta">
-      <div class="cta-tel">
-        <img src="img/白電話 .webp" alt="電話の画像">
+      <div class="cta-tel cs">
+        <img src="img/黒電話1.webp" alt="電話の画像">
         <div class="cta-tel-text">
           <h3>06-6422-5526</h3>
           <small>※電話受付は10時～19時まで</small>
         </div>
       </div>
       <div class="cta-under">
-        <h5><span class="red">24時間</span>受付中</h5>
-        <h6>通常1時間以内にご返信いたします</h6>
+        <div class="pc-cta">
+          <h5><span class="red">24時間</span>受付中</h5>
+          <h6>通常1時間以内にご返信いたします</h6>
+          <div class="cta-caution pc">
+            <small>※相談・見積もりは完全無料</small>
+            <small>※しつこい営業は一切ありません</small>
+            <small>※秘密厳守で対応します</small>
+          </div>
+        </div>
         <div class="cta-button">
           <a href="" class="cta-line">
-            <img src="img/LINE-button.webp" alt="LINEのボタン">
+            <img class="line-img" src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEで<br>
               今すぐ相談</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
-          <a href="" class="cta-form">
-            <img src="img/form-letter.webp" alt="フォームのイラスト">
+          <a href="#" class="cta-form">
+            <img class="cs" src="img/form-letter.webp" alt="フォームのイラスト">
+            <img class="pc computer" src="img/Vector.png" alt="">
             <span>無料見積り<br>
               はこちら</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
         </div>
-        <div class="cta-caution">
+        <div class="cta-caution cs">
           <small>※相談・見積もりは完全無料</small>
           <small>※しつこい営業は一切ありません</small>
           <small>※秘密厳守で対応します</small>
@@ -318,49 +380,85 @@
     </div>
   </section>
 
+  <section class="pc cta-bottom-text">
+    <div>5㎥で50,000円の場合、<span class="red">1㎥あたり約10,000円</span>。<br>お見積り後の追加料金はありません。</div>
+  </section>
+
   <section class="cost wapper">
-    <h2>基本料金の目安</h2>
-    <h6>お部屋の広さとゴミの量で、<br>
+    <h2 class="cs">基本料金の目安</h2>
+    <h2 class="pc">広さ別での基本料金の目安</h2>
+    <h6 class="cs">お部屋の広さとゴミの量で、<br>
       おおよその料金がわかります</h6>
     <div class="cost-cards">
-      <div class="cost-top">
+      <div class="cost-top cs">
         <div class="cost-area">1K/1dk</div>
         <div class="cost-degree">軽度(ゴミ5㎥未満)</div>
       </div>
-      <div class="cost-bottom">
+
+      <div class="pc-cost-area pc">1K/1dk</div>
+      <div class="pc-cost-degree pc">軽度(ゴミ5㎥未満)</div>
+
+      <div class="cost-bottom cs">
         <div class="cost-price red">￥50,000～￥10,000</div>
         <div class="cost-time">作業時間：半日～1日</div>
       </div>
+
+      <div class="pc-cost-price pc">￥50,000～￥10,000</div>
+      <div class="pc-cost-time pc">作業時間：半日～1日</div>
+
     </div>
     <div class="cost-cards">
-      <div class="cost-top">
+      <div class="cost-top cs">
         <div class="cost-area">1LDK/2DK</div>
         <div class="cost-degree">中度(ゴミ5～10㎥)</div>
       </div>
-      <div class="cost-bottom">
+
+      <div class="pc-cost-area pc">1LDK/2DK</div>
+        <div class="pc-cost-degree pc">中度(ゴミ5～10㎥)</div>
+
+      <div class="cost-bottom cs">
         <div class="cost-price red">￥100,000～￥200,000</div>
         <div class="cost-time">作業時間：1日～1.5日</div>
       </div>
+      
+        <div class="pc-cost-price pc">￥100,000～￥200,000</div>
+        <div class="pc-cost-time pc">作業時間：1日～1.5日</div>
     </div>
+
     <div class="cost-cards">
-      <div class="cost-top">
+      <div class="cost-top cs">
         <div class="cost-area">2LDK/3DK</div>
         <div class="cost-degree">重度(ゴミ10～20㎥未満)</div>
       </div>
-      <div class="cost-bottom">
+
+      <div class="pc-cost-area pc">2LDK/3DK</div>
+        <div class="pc-cost-degree pc">重度(ゴミ10～20㎥未満)</div>
+
+      <div class="cost-bottom cs">
         <div class="cost-price red">￥200,000～￥350,000</div>
         <div class="cost-time">作業時間：1.5日～2日</div>
       </div>
+      
+        <div class="pc-cost-price">￥200,000～￥350,000</div>
+        <div class="pc-cost-time">作業時間：1.5日～2日</div>
+
     </div>
     <div class="cost-cards">
-      <div class="cost-top">
+      <div class="cost-top cs">
         <div class="cost-area">3LDK以上</div>
         <div class="cost-degree">超重度(ゴミ20㎥以上)</div>
       </div>
-      <div class="cost-bottom">
+
+      <div class="pc-cost-area pc">3LDK以上</div>
+        <div class="pc-cost-degree pc">超重度(ゴミ20㎥以上)</div>
+
+      <div class="cost-bottom cs">
         <div class="cost-price red">￥350,000～</div>
         <div class="cost-time">作業時間：2日以上</div>
       </div>
+
+        <div class="pc-cost-price pc">￥350,000～</div>
+        <div class="pc-cost-time pc">作業時間：2日以上</div>
     </div>
     <h6><span class="red big">基本料金</span>には<br>
       <span class="red big">下記のサービス</span>が<br>
@@ -383,29 +481,39 @@
 
   <section>
     <div class="cta">
-      <div class="cta-tel">
-        <img src="img/白電話 .webp" alt="電話の画像">
+      <div class="cta-tel cs">
+        <img src="img/黒電話1.webp" alt="電話の画像">
         <div class="cta-tel-text">
           <h3>06-6422-5526</h3>
           <small>※電話受付は10時～19時まで</small>
         </div>
       </div>
       <div class="cta-under">
-        <h5><span class="red">24時間</span>受付中</h5>
-        <h6>通常1時間以内にご返信いたします</h6>
+        <div class="pc-cta">
+          <h5><span class="red">24時間</span>受付中</h5>
+          <h6>通常1時間以内にご返信いたします</h6>
+          <div class="cta-caution pc">
+            <small>※相談・見積もりは完全無料</small>
+            <small>※しつこい営業は一切ありません</small>
+            <small>※秘密厳守で対応します</small>
+          </div>
+        </div>
         <div class="cta-button">
           <a href="" class="cta-line">
-            <img src="img/LINE-button.webp" alt="LINEのボタン">
+            <img class="line-img" src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEで<br>
               今すぐ相談</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
-          <a href="" class="cta-form">
-            <img src="img/form-letter.webp" alt="フォームのイラスト">
+          <a href="#" class="cta-form">
+            <img class="cs" src="img/form-letter.webp" alt="フォームのイラスト">
+            <img class="pc computer" src="img/Vector.png" alt="">
             <span>無料見積り<br>
               はこちら</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
         </div>
-        <div class="cta-caution">
+        <div class="cta-caution cs">
           <small>※相談・見積もりは完全無料</small>
           <small>※しつこい営業は一切ありません</small>
           <small>※秘密厳守で対応します</small>
@@ -413,6 +521,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="work-examples wapper">
     <h2>作業事例</h2>
@@ -468,7 +577,8 @@
             <span>H.S様</span>
           </div>
           <div class="eva-text">
-            texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+            <span>
+              texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</span>
           </div>
         </div>
       </div>
@@ -477,29 +587,39 @@
 
   <section>
     <div class="cta">
-      <div class="cta-tel">
-        <img src="img/白電話 .webp" alt="電話の画像">
+      <div class="cta-tel cs">
+        <img src="img/黒電話1.webp" alt="電話の画像">
         <div class="cta-tel-text">
           <h3>06-6422-5526</h3>
           <small>※電話受付は10時～19時まで</small>
         </div>
       </div>
       <div class="cta-under">
-        <h5><span class="red">24時間</span>受付中</h5>
-        <h6>通常1時間以内にご返信いたします</h6>
+        <div class="pc-cta">
+          <h5><span class="red">24時間</span>受付中</h5>
+          <h6>通常1時間以内にご返信いたします</h6>
+          <div class="cta-caution pc">
+            <small>※相談・見積もりは完全無料</small>
+            <small>※しつこい営業は一切ありません</small>
+            <small>※秘密厳守で対応します</small>
+          </div>
+        </div>
         <div class="cta-button">
           <a href="" class="cta-line">
-            <img src="img/LINE-button.webp" alt="LINEのボタン">
+            <img class="line-img" src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEで<br>
               今すぐ相談</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
-          <a href="" class="cta-form">
-            <img src="img/form-letter.webp" alt="フォームのイラスト">
+          <a href="#" class="cta-form">
+            <img class="cs" src="img/form-letter.webp" alt="フォームのイラスト">
+            <img class="pc computer" src="img/Vector.png" alt="">
             <span>無料見積り<br>
               はこちら</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
         </div>
-        <div class="cta-caution">
+        <div class="cta-caution cs">
           <small>※相談・見積もりは完全無料</small>
           <small>※しつこい営業は一切ありません</small>
           <small>※秘密厳守で対応します</small>
@@ -507,6 +627,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="service wapper">
     <h2>サービスの流れ</h2>
@@ -640,189 +761,191 @@
     <div class="swiper wapper">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <div class="voice-card">
-            <div class="voice-title">
-              <div class="face-name">
-                <img src="img/voice-face.webp" alt="お客様のイメージ画像">
-                <span class="orenge">H・S様</span>
-                <div></div>
-              </div>
-              <div class="JD">
-                <p>ゴミ屋敷<br>
-                  片付け</p>
-              </div>
-              <div class="floor-plan">
-                <p>間取り<br>
-                  text
+        <ol>
+          <li>
+            <div class="swiper-slide">
+              <div class="voice-card">
+                <div class="voice-title">
+                  <div class="face-name">
+                    <img src="img/voice-face.webp" alt="お客様のイメージ画像">
+                    <span class="orenge">H・S様</span>
+                    <div></div>
+                  </div>
+                  <div class="JD">
+                    <p>ゴミ屋敷<br>
+                      片付け</p>
+                  </div>
+                  <div class="floor-plan">
+                    <p>間取り<br>
+                      text
+                    </p>
+                  </div>
+                </div>
+                <div class="voice-paper">
+                  <!-- <img src="" alt=""> -->
+                </div>
+                <div class="voice-text1">
+                  <h4>texttexttexttext<br>
+                    texttexttexttexttextt</h4>
+                </div>
+                <div class="voice-border"></div>
+                <div class="graf">
+                  <div class="voice-evaluation1">
+                    <span>スタッフ評価</span>
+                    <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
+                    <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
+                  </div>
+                  <div class="voice-evaluation2">
+                    <span>サービス満足度</span>
+                    <div>
+                      <img src="img/100点.webp" alt="100点の画像">
+                    </div>
+                  </div>
+                </div>
+                <p class="voice-p">
+                  texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
                 </p>
-              </div>
-            </div>
-            <div class="voice-paper">
-              <!-- <img src="" alt=""> -->
-            </div>
-            <div class="voice-text1">
-              <h4>texttexttexttext<br>
-                texttexttexttexttextt</h4>
-            </div>
-            <div class="voice-border"></div>
-            <div class="graf">
-              <div class="voice-evaluation1">
-                <span>スタッフ評価</span>
-                <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
-                <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
-              </div>
-              <div class="voice-evaluation2">
-                <span>サービス満足度</span>
-                <div>
-                  <img src="img/100点.webp" alt="100点の画像">
+                <div class="before-after">
+                  <div class="voice-photo">
+                    <img src="img/voice-before1.webp" alt="清掃前の画像">
+                  </div>
+                  <div>
+                    <img src="img/Vector.webp" alt="矢印の画像">
+                  </div>
+                  <div class="voice-photo">
+                    <img src="img/voice-after1.webp" alt="清掃後の画像">
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="voice-p">
-              texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-            </p>
-            <div class="before-after">
-              <div class="voice-photo">
-                <img src="img/voice-before1.webp" alt="清掃前の画像">
-              </div>
-              <div>
-                <img src="img/Vector.webp" alt="矢印の画像">
-              </div>
-              <div class="voice-photo">
-                <img src="img/voice-after1.webp" alt="清掃後の画像">
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
 
-        <div class="swiper-slide">
-          <div class="voice-card">
-            <div class="voice-title">
-              <div class="face-name">
-                <img src="img/voice-face.webp" alt="お客様のイメージ画像">
-                <span class="orenge">H・S様</span>
-                <div></div>
-              </div>
-              <div class="JD">
-                <p>ゴミ屋敷<br>
-                  片付け</p>
-              </div>
-              <div class="floor-plan">
-                <p>間取り<br>
-                  text
+          <li>
+            <div class="swiper-slide">
+              <div class="voice-card">
+                <div class="voice-title">
+                  <div class="face-name">
+                    <img src="img/voice-face.webp" alt="お客様のイメージ画像">
+                    <span class="orenge">H・S様</span>
+                    <div></div>
+                  </div>
+                  <div class="JD">
+                    <p>ゴミ屋敷<br>
+                      片付け</p>
+                  </div>
+                  <div class="floor-plan">
+                    <p>間取り<br>
+                      text
+                    </p>
+                  </div>
+                </div>
+                <div class="voice-paper">
+                  <!-- <img src="" alt=""> -->
+                </div>
+                <div class="voice-text1">
+                  <h4>texttexttexttext<br>
+                    texttexttexttexttextt</h4>
+                </div>
+                <div class="voice-border"></div>
+                <div class="graf">
+                  <div class="voice-evaluation1">
+                    <span>スタッフ評価</span>
+                    <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
+                    <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
+                  </div>
+                  <div class="voice-evaluation2">
+                    <span>サービス満足度</span>
+                    <div>
+                      <img src="img/100点.webp" alt="100点の画像">
+                    </div>
+                  </div>
+                </div>
+                <p class="voice-p">
+                  texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
                 </p>
-              </div>
-            </div>
-            <div class="voice-paper">
-              <!-- <img src="" alt=""> -->
-            </div>
-            <div class="voice-text1">
-              <h4>texttexttexttext<br>
-                texttexttexttexttextt</h4>
-            </div>
-            <div class="voice-border"></div>
-            <div class="graf">
-              <div class="voice-evaluation1">
-                <span>スタッフ評価</span>
-                <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
-                <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
-              </div>
-              <div class="voice-evaluation2">
-                <span>サービス満足度</span>
-                <div>
-                  <img src="img/100点.webp" alt="100点の画像">
+                <div class="before-after">
+                  <div class="voice-photo">
+                    <img src="img/voice-before1.webp" alt="清掃前の画像">
+                  </div>
+                  <div>
+                    <img src="img/Vector.webp" alt="矢印の画像">
+                  </div>
+                  <div class="voice-photo">
+                    <img src="img/voice-after1.webp" alt="清掃後の画像">
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="voice-p">
-              texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-            </p>
-            <div class="before-after">
-              <div class="voice-photo">
-                <img src="img/voice-before1.webp" alt="清掃前の画像">
-              </div>
-              <div>
-                <img src="img/Vector.webp" alt="矢印の画像">
-              </div>
-              <div class="voice-photo">
-                <img src="img/voice-after1.webp" alt="清掃後の画像">
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
 
-        <div class="swiper-slide">
-          <div class="voice-card">
-            <div class="voice-title">
-              <div class="face-name">
-                <img src="img/voice-face.webp" alt="お客様のイメージ画像">
-                <span class="orenge">H・S様</span>
-                <div></div>
-              </div>
-              <div class="JD">
-                <p>ゴミ屋敷<br>
-                  片付け</p>
-              </div>
-              <div class="floor-plan">
-                <p>間取り<br>
-                  text
+          <li>
+            <div class="swiper-slide">
+              <div class="voice-card">
+                <div class="voice-title">
+                  <div class="face-name">
+                    <img src="img/voice-face.webp" alt="お客様のイメージ画像">
+                    <span class="orenge">H・S様</span>
+                    <div></div>
+                  </div>
+                  <div class="JD">
+                    <p>ゴミ屋敷<br>
+                      片付け</p>
+                  </div>
+                  <div class="floor-plan">
+                    <p>間取り<br>
+                      text
+                    </p>
+                  </div>
+                </div>
+                <div class="voice-paper">
+                  <!-- <img src="" alt=""> -->
+                </div>
+                <div class="voice-text1">
+                  <h4>texttexttexttext<br>
+                    texttexttexttexttextt</h4>
+                </div>
+                <div class="voice-border"></div>
+                <div class="graf">
+                  <div class="voice-evaluation1">
+                    <span>スタッフ評価</span>
+                    <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
+                    <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
+                  </div>
+                  <div class="voice-evaluation2">
+                    <span>サービス満足度</span>
+                    <div>
+                      <img src="img/100点.webp" alt="100点の画像">
+                    </div>
+                  </div>
+                </div>
+                <p class="voice-p">
+                  texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
                 </p>
-              </div>
-            </div>
-            <div class="voice-paper">
-              <!-- <img src="" alt=""> -->
-            </div>
-            <div class="voice-text1">
-              <h4>texttexttexttext<br>
-                texttexttexttexttextt</h4>
-            </div>
-            <div class="voice-border"></div>
-            <div class="graf">
-              <div class="voice-evaluation1">
-                <span>スタッフ評価</span>
-                <img src="img/voice-graf-all.webp" alt="評価のグラフの画像">
-                <!-- 背景にして上に色違いを重ねるか重ねた画像を作る -->
-              </div>
-              <div class="voice-evaluation2">
-                <span>サービス満足度</span>
-                <div>
-                  <img src="img/100点.webp" alt="100点の画像">
+                <div class="before-after">
+                  <div class="voice-photo">
+                    <img src="img/voice-before1.webp" alt="清掃前の画像">
+                  </div>
+                  <div>
+                    <img src="img/Vector.webp" alt="矢印の画像">
+                  </div>
+                  <div class="voice-photo">
+                    <img src="img/voice-after1.webp" alt="清掃後の画像">
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="voice-p">
-              texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-            </p>
-            <div class="before-after">
-              <div class="voice-photo">
-                <img src="img/voice-before1.webp" alt="清掃前の画像">
-              </div>
-              <div>
-                <img src="img/Vector.webp" alt="矢印の画像">
-              </div>
-              <div class="voice-photo">
-                <img src="img/voice-after1.webp" alt="清掃後の画像">
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ol>
 
       </div>
     </div>
 
     <div class="slide-button">
-      <button class="prev">
+      <button id="prev" class="prev">
         <img src="img/arrow-left.webp" alt="左矢印">
       </button>
 
-      <div class="custom-pagination">
-        <span></span>
-        <span class="active"></span>
-        <span></span>
-      </div>
-
-      <button class="next">
+      <button id="next" class="next">
         <img src="img/arrow-right.webp" alt="右矢印">
       </button>
     </div>
@@ -1031,29 +1154,39 @@
 
   <section>
     <div class="cta">
-      <div class="cta-tel">
-        <img src="img/白電話 .webp" alt="電話の画像">
+      <div class="cta-tel cs">
+        <img src="img/黒電話1.webp" alt="電話の画像">
         <div class="cta-tel-text">
           <h3>06-6422-5526</h3>
           <small>※電話受付は10時～19時まで</small>
         </div>
       </div>
       <div class="cta-under">
-        <h5><span class="red">24時間</span>受付中</h5>
-        <h6>通常1時間以内にご返信いたします</h6>
+        <div class="pc-cta">
+          <h5><span class="red">24時間</span>受付中</h5>
+          <h6>通常1時間以内にご返信いたします</h6>
+          <div class="cta-caution pc">
+            <small>※相談・見積もりは完全無料</small>
+            <small>※しつこい営業は一切ありません</small>
+            <small>※秘密厳守で対応します</small>
+          </div>
+        </div>
         <div class="cta-button">
           <a href="" class="cta-line">
-            <img src="img/LINE-button.webp" alt="LINEのボタン">
+            <img class="line-img" src="img/LINE-button.webp" alt="LINEのボタン">
             <span>LINEで<br>
               今すぐ相談</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
-          <a href="" class="cta-form">
-            <img src="img/form-letter.webp" alt="フォームのイラスト">
+          <a href="#" class="cta-form">
+            <img class="cs" src="img/form-letter.webp" alt="フォームのイラスト">
+            <img class="pc computer" src="img/Vector.png" alt="">
             <span>無料見積り<br>
               はこちら</span>
+            <img class="pc pc-arrow" src="img/arrow-right.webp" alt="右矢印の画像">
           </a>
         </div>
-        <div class="cta-caution">
+        <div class="cta-caution cs">
           <small>※相談・見積もりは完全無料</small>
           <small>※しつこい営業は一切ありません</small>
           <small>※秘密厳守で対応します</small>
@@ -1061,6 +1194,7 @@
       </div>
     </div>
   </section>
+
 
 
   <section class="end wapper">
@@ -1103,6 +1237,31 @@
     </ul>
     <small>Copyright &copy; 2023 お掃除兄弟. All rights reserved.</small>
   </footer>
+
+  <div class="CV">
+    <div class="CV-LINE">
+      <a href="#">
+        <img src="img/LINE-button.webp" alt="LINEのイメージ画像">
+        <span>LINEで<br>
+          今すぐ相談</span></a>
+    </div>
+    <div class="CV-form">
+      <a href="#">
+        <img src="img/form-letter.webp" alt="メールのイメージ画像">
+        無料見積は<br>
+        こちら
+      </a>
+    </div>
+    <div class="CV-tell">
+      <a href="#">
+        <img src="img/黒電話1.webp" alt="電話の画像">
+        <div>
+          <h3>06-6422-5526</h3>
+          <small>※電話受付は10時～19時まで</small>
+        </div>
+      </a>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
