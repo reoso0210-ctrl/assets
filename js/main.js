@@ -4,7 +4,8 @@
   const next = document.getElementById('next');  // 次へボタン
   const prev = document.getElementById('prev');  // 前へボタン
   const ul = document.querySelector('ol');       // スライド全体の入れ物
-  const slides = ul.children;                    // スライド１枚１枚（li要素など）  
+  const slides = ul.children;                    // スライド１枚１枚（li要素など）
+  const dots = document.querySelectorAll('.voice .slide-dot');
 
   //   HTMLでid="next"とid="prev"があるボタン、
   // olタグ（番号付きリスト）内のスライドを操作対象にします。
@@ -24,21 +25,18 @@
   // 最初は0番目のスライド（左端）を表示。
 
 
-  // 4. ボタンの表示・非表示を切り替え
+  // 4. ボタンとドットの状態を更新
   function updateButtons() {
-    prev.classList.remove("hidden");
-    next.classList.remove("hidden");
+    prev.disabled = currentIndex === 0;
+    next.disabled = currentIndex === slides.length - 1;
 
-    if (currentIndex === 0) {
-      prev.classList.add("hidden");  // 最初のスライドなら「前へ」は非表示
-    }
-
-    if (currentIndex === slides.length - 1) {
-      next.classList.add("hidden");  // 最後のスライドなら「次へ」は非表示
-    }
+    dots.forEach((dot, i) => {
+      const active = i === currentIndex;
+      dot.classList.toggle('is-active', active);
+    });
   }
 
-  // 例えば3枚スライドがある場合、最初は「前へ」ボタンを非表示、最後に来たら「次へ」ボタンを非表示にします。
+  // 例えば3枚スライドがある場合、最初は「前へ」が disabled、最後は「次へ」が disabled。ドットの見た目も currentIndex に合わせる。
 
 
   // 5. スライドの位置を変える
@@ -66,5 +64,15 @@
 
   // 「次へ」クリック → currentIndex を増やしてスライドを右に動かす
   // 「前へ」クリック → currentIndex を減らしてスライドを左に戻す
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const i = Number(dot.dataset.slideIndex);
+      if (Number.isFinite(i) && i >= 0 && i < slides.length) {
+        currentIndex = i;
+        moveSlides();
+      }
+    });
+  });
 
 }
