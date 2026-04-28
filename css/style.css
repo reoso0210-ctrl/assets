@@ -1749,6 +1749,7 @@
   height: 100%;
   display: flex;
   transition: transform .3s;
+  will-change: transform;
 }
 
 /* 1枚ずつ表示（次のスライドが横に見切れないようにする） */
@@ -1756,6 +1757,7 @@
   flex: 0 0 100%;
   display: flex;
   justify-content: center;
+  flex: 0 0 100%;
 }
 
 .voice .slide-button {
