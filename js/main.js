@@ -94,12 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = track.children;
     if (!items[index]) return; // 存在しない場合は終了
 
-    // 指定したスライドを中央にスクロール
-    items[index].scrollIntoView({
-      behavior: smooth ? 'smooth' : 'auto', // アニメーション有無
-      inline: 'center'
+    const el = items[index];
+    const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+    const targetLeft = el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2;
+    const left = Math.max(0, Math.min(maxScroll, targetLeft));
+    track.scrollTo({
+      left,
+      behavior: smooth ? 'smooth' : 'auto'
     });
-
     // ドット（下の丸）のアクティブ状態更新
     // クローンが先頭にあるので index -1 で合わせる
     dots.forEach((dot, i) => {

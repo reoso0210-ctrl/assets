@@ -1180,6 +1180,10 @@
   overflow-wrap: break-word;
   text-align: left;
   padding-left: 10px;
+  span{
+    letter-spacing: 10%;
+    line-height: 110%;
+  }
 }
 
 @media (max-width: 429px) {
@@ -2045,7 +2049,7 @@
 .faq dd.open {
   max-height: 1000px; /* 十分な高さを確保 */
   opacity: 1;
-  padding: 20px 18px 40px 18px; /* 開いた時に余白を作る */
+  padding: 0 18px 40px 18px; /* 開いた時に余白を作る */
 }
 
 /* ＋アイコンの縦線パーツがある場合のアニメーション */
@@ -2308,6 +2312,7 @@
 }
 
 .other-cta {
+  border-bottom: solid 2px #2E3D52;
 
   .cta-button {
     display: flex;
