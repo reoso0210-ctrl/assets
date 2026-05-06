@@ -61,6 +61,9 @@ button{
     .wapper{
         padding: 60px 30px;
     }
+    .NO{
+        display: none;
+    }
 }
 
 h1{
