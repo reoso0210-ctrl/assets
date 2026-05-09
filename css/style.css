@@ -13,8 +13,7 @@
 }
 
 .logo {
-  width: 91px;
-  height: 70px;
+  width: 137px;
 }
 
 .buttons {
@@ -127,6 +126,10 @@
 }
 
 @media (min-width: 768px) {
+
+  .header-top{
+    margin: 40px auto;
+  }
   .cs {
     display: none;
   }
@@ -144,7 +147,7 @@
     max-width: 1300px;
   }
 
-  .menu a {
+  .menu a{
     border: none;
     border-left: solid 2px #2E3D52;
   }
@@ -153,7 +156,7 @@
     border-right: solid 2px #2E3D52;
   }
 
-  .menu li {
+  .menu a li {
     font-size: 18px;
 
     br {
@@ -599,6 +602,9 @@
     background-image: linear-gradient(rgba(231, 240, 248, 0.6), rgba(231, 240, 248, 0.6)),
       url(../img/background-reason.webp);
   }
+  .trouble{
+    padding: 50px 30px;
+  }
 
   .remain-text {
     margin: 0;
@@ -765,6 +771,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 370px;
+  width: 100%;
 }
 
 
@@ -956,7 +964,7 @@
   .mini-text {
     max-width: 1000px;
     width: 100%;
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
   }
 
@@ -1539,6 +1547,7 @@
 
 .flow-sentence p {
   padding-bottom: 16px;
+  line-height: 1.5;
 }
 
 .border {
@@ -1546,6 +1555,13 @@
   height: 2px;
   background-color: #2E3D52;
   margin-bottom: 15px;
+}
+  .flow:nth-child(8) {
+  .flow-photo{
+    background-size: 420px;
+    background-position: 50% 0%;
+
+  }
 }
 
 @media (max-width: 429px) {
@@ -1571,8 +1587,16 @@
       linear-gradient(rgba(231, 240, 248, 0.5), rgba(231, 240, 248, 0.5)),
       url(../img/servicehaikeipc.webp);
   }
+  .flow:nth-child(8) {
+  .flow-photo{
+    background-size:cover;
+    background-position: center;
 
-  .flow {
+  }
+}
+
+
+  .flow,.flow1 {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
@@ -1595,6 +1619,7 @@
 
   .flow-sentence p {
     max-width: 750px;
+    font-size: 20px;
   }
 
   .border {
@@ -2183,6 +2208,7 @@
 .strong {
   font-weight: 600;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 /* 以前のコードへの追記・修正 */
@@ -2231,6 +2257,11 @@
     background-image: linear-gradient(rgba(231, 240, 248, 0.5), rgba(231, 240, 248, 0.5)), url(../img/background-question.webp);
   padding: 120px 20px;
   }
+  .content-wrapper{
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .faq {
     max-width: 880px;
@@ -2239,6 +2270,7 @@
 
     dt {
       font-size: 32px;
+      gap: 20px;
     }
 
     .strong {
@@ -2248,6 +2280,8 @@
 
     .normal {
       font-size: 18px;
+      letter-spacing: 10%;
+      line-height: 150%;
     }
 
     dd.open {
@@ -2367,6 +2401,7 @@
   span {
     font-size: 16px;
     color: white;
+    text-align: center;
   }
 }
 
@@ -2834,8 +2869,7 @@
   text-align: center;
 
   img {
-    width: 100%;
-    width: 30px;
+    width: 28px;
     height: auto;
   }
 }
@@ -2844,13 +2878,22 @@
   text-align: center;
 
   img {
-    width: 100%;
-    width: 100px;
+    width: 73px;
     height: auto;
   }
 }
+.invoice-in{
+  display: flex;
+  align-items: center;
+  max-width: 310px;
+  width: 100%;
+  justify-content: space-between;
+}
 
 @media(min-width:768px) {
+  .invoice-in{
+  max-width: 760px;
+  }
   .end{
     background: #FFFAF0;
   }
@@ -2914,7 +2957,7 @@
     width: 75px;
 
     img {
-      width: 100%;
+      width: 72px;
     }
   }
 
